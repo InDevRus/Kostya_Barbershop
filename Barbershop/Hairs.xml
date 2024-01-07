@@ -7,21 +7,15 @@
     <Price>500</Price>
   </Hair>
   <Hair>
-    <KodS>3</KodS>
-    <Name>Афро</Name>
-    <Gender>М</Gender>
-    <Price>3000</Price>
-  </Hair>
-  <Hair>
     <KodS>1</KodS>
     <Name>Афро</Name>
     <Gender>Ж</Gender>
     <Price>3000</Price>
   </Hair>
   <Hair>
-    <KodS></KodS>
-    <Name>группировка</Name>
-    <Gender></Gender>
-    <Price></Price>
+    <KodS>3</KodS>
+    <Name>Афро</Name>
+    <Gender>М</Gender>
+    <Price>5000</Price>
   </Hair>
 </Hairs>

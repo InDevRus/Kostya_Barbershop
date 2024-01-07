@@ -14,6 +14,7 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Barbershop.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -67,6 +71,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="operations\DatabaseFiles.cs" />
     <Compile Include="glavform.cs" />
     <Compile Include="Glavform.xaml.cs">
       <DependentUpon>Glavform.xaml</DependentUpon>
@@ -77,6 +82,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="operations\ClientsOperator.cs" />
+    <Compile Include="operations\HairsOperator.cs" />
+    <Compile Include="operations\IOperator.cs" />
+    <Compile Include="operations\IOperatorLoader.cs" />
+    <Compile Include="operations\OperatorLoader.cs" />
+    <Compile Include="operations\WorksOperator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -110,6 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Hairs.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Clients.xml" />
+    <Resource Include="Hairs.xml" />
+    <Resource Include="Works.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
